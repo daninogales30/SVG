@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muñeco Jengibre</title>
+    <style>
+        .cabeza{
+            fill: #cd803d;
+        }
+
+        .cuerpo{
+            stroke: #cd803d;
+            stroke-width: 55px;
+            stroke-linecap: round;
+        }
+
+        .ojos{
+            fill: white;
+        }
+
+        .boca{
+            stroke : white;
+            stroke-width: 4px;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <svg width=300 height="300">
+        <!-- Cabeza -->
+        <circle cx="150" cy="90" r="50" class="cabeza"/>
+
+        <!-- Cuerpo -->
+        <line x1="60" y1="150" x2="240" y2="150" class="cuerpo"/>
+        <line x1="110" y1="270" x2="150" y2="150" class="cuerpo"/>
+        <line x1="150" y1="150" x2="190" y2="270" class="cuerpo"/>
+
+        <!-- Ojos -->
+        <circle cx="133" cy="80" r="5" class="ojos"/>
+        <circle cx="166" cy="80" r="5" class="ojos"/>
+
+        <!-- Boca -->
+        <rect x="135" y="100" rx="5" ry="5" width="30" height="10" class="boca"/>
+
+        <!-- Botones -->
+        <circle cx="150" cy="150" r="8"/>
+        <circle cx="150" cy="190" r="8"/>
+    </svg>
+</body>
+</html>
